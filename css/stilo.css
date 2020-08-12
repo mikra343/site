@@ -1,0 +1,67 @@
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat');*/
+
+* {
+  box-sizing: border-box;
+}
+/*ubicacion del contenedor de la informacion*/
+.accordion {
+  width: 80%;
+  max-width: 1000px;
+}
+
+/*color y tamaños del acordeon*/
+.accordion-item {
+  background-color: rgba(74,86,105,0.8);
+  color: #fff;
+  margin: 0.5rem 0;
+  border-radius: 0.5rem;
+}
+
+/*contenido del acordeon*/
+.accordion-item-header {
+  padding: 0.2rem 2rem 0rem 0.5rem; /*ubicacion del texto dentro del contenedor*/
+  min-height: 2.3rem; /*tamaño del contenedor*/
+  line-height: 1.25rem; /*espaciado*/ 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+
+}
+
+/*color y tamaños del simbolo +*/
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+
+}
+
+/************************************/
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+/*cajas desplegablez del acordeon*/
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background: rgba(1,151,51,0.5);
+}
+
+/*texto dentro de las cajas desplegables del acordeon*/
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}

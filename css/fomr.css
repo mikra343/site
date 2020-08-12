@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+form{
+	width:auto;
+	margin: auto;
+	background: rgba(51,51,51,0.5);
+	padding: 10px 20px;
+	border-radius: 7px;
+}
+
+input, textarea{
+	margin-bottom: 20px;
+	padding: 7px;
+	border:none;
+	border-radius: 4px;
+}
+label{
+	font-weight: bold;
+}
+textarea{
+	min-height: 100px;
+	max-height: 250px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+#boton{
+	background: #019733;
+	color: #fff;
+	padding:15px;
+}
+
+#boton:hover{
+	cursor: pointer;
+
+}

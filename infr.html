@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Sistema Integral de Titulación y Egresados</title>
+	<meta charset="UTF-8"/>
+	<!--Responsive-->
+	<meta name="viewport" content="width-device-width, user-scalable=no, inicial-scale=1, maximum-scale=1, minimum scale=1"/>
+	<!--Iconos-->
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<!--Estilo-->
+	<link rel="stylesheet" type="text/css" href="css/stilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="css/mnl.css">
+  <link rel="stylesheet" type="text/css" href="css/car.css">
+  
+  <!--Dinamismo-->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/aco.js" defer></script>
+  <script type="text/javascript" src="js/mnl.js" defer></script>
+  
+
+</head>
+
+<body>
+	<header>
+			<!--Contenedor de menu-->
+			<div class="contenedor">
+				
+				<input type="checkbox" id="menu-bar">
+				<label class="icon-menu" for="menu-bar"></label>
+				<nav class="menu">
+					<a href="index.html">Incio</a>
+          <a href="infr.html">Titulación</a>
+          <a href="rep.html">Repositorio</a>
+          <a href="tram.html">Trámites</a>
+          <a href="egre.html">Seguimiento de Egresados</a>
+          <a href="emp.html">Cuestionario para Empleadores</a>
+				</nav>
+			</div>
+		</header>
+		
+		<!--Comienza la informacion-->
+		<main>
+      
+      <!--Imagen de Cabecera-->
+      <section id="bnnr1">
+        <img src="img/bnrc.png">
+          <div class="contenedor">
+            <h2 >TITULACIÓN</h2><hr>
+          </div>
+      </section>
+
+
+       <!--Habra un menu-->
+      <div class="cont-menu">
+        <div class="con-manu">
+          <!--<input type="checkbox" id="manu-ver">-->
+          <nav class="manu">
+            <button class="tablink" onclick="openPage('uno',this,'#019733')"id="defaultOpen">Opciones <br>de Titulación</button>
+            <button class="tablink" onclick="openPage('dos',this,'#019733')"id="defaultOpen">Requisitos<br> para Titulación</button>
+            <button class="tablink" onclick="openPage('tres',this,'#019733')"id="defaultOpen">Procedimiento<br> de Tramite</button>
+          </nav>
+        </div>
+      </div>
+
+     
+      <div id="uno" class="tabcontent">
+          <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                 Residencia Profesional
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Consiste en la presentación de un informe sobre el desarrollo de su estancia en el sector productivo, que por su contenido y calidad del desarrollo de la residencia, sea aprobado por la Jefatura de División. El egresado(a) debe contar con la capacidad de desarrollar proyectos integrales, asimismo con las habilidades a manera de que este sea innovador y creativo, e implemente estrategias para resolver las diferentes situaciones y necesidades que se le presenten a través de un sentido de responsabilidad mostrando una actitud de liderazgo.
+                      </div>
+                    </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Proyecto de Investigacion y/o Desarrollo Tecnologico
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Este proyecto consiste en obtener, mediante un procedimiento metodológico, un resultado científico y/o tecnológico, en donde se innova o adecúa una tecnología o parte de un proceso productivo o experimental que resulta de utilidad para la humanidad y cuyo impacto puede ser local, regional, nacional o internacional. El egresado(a) aplicará las competencias, aptitudes y habilidades en el proyecto.
+                      </div>
+                    </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Proyecto Integrador
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Es un trabajo técnico y/o científico de carácter analítico que se elabora en un área específica del conocimiento, por medio del cual el estudiante pone en evidencia los conocimientos sus competencias, habilidades, aptitudes y valores adquiridos de forma integrada a lo largo de un periodo determinado de estudios. Dicho trabajo está dirigido a proponer una acción innovadora en el ámbito profesional, que den muestra de la competencia adquirida a través del desempeño del egresado(a).
+                      </div>
+                    </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Proyecto Productivo
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                        Un proyecto se puede crear en base a una necesidad que se quiere cubrir o en alguna idea específica. Para que se considere productivo, debe cubrir esta necesidad o idea de la mejor manera, obteniendo resultados medibles y que tengan un impacto positivo, expresando el autor del proyecto sus competencias y habilidades en la obtención de productos y/o servicios con una finalidad claramente productivo, con valores altamente cimentados; tomando en cuenta estas fases: Visión, Planificación; Desarrollo e Implantación.
+                      </div>
+                    </div>
+                </div>
+
+               <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Proyecto de Innovacion Tecnologica
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                        Un Proyecto de Innovación Tecnológica  suele ser más que un proyecto tradicional. Es un diseño, con una estrategia puesta en marcha, planificación, ejecución, control y cierre, requiere un instrumental y conocimiento más amplio y multidisciplinario. Incluye varios elementos de los cuales deben destacarse: a) El diseño, gestión y dirección de una innovación para que sea aceptada e interiorizada por los mercados receptores. b) La creación y consolidación de mercados que la usen de manera sostenible como negocio y sostenible en términos de respeto a las personas y su entorno inmediato y mediato. c) El uso de herramientas proyectuales técnicas, culturales, competencias y habilidades para que el resultado del proyecto, la innovación, sea un nuevo dispositivo que proyecte una mejor calidad de vida. d) Construir modelos de negocio que dejen a la innovación como un nuevo componente de la vida diaria basada en valores, que sea viable, rentable y sostenible tanto económicamente como socialmente.
+                      </div>
+                    </div>
+              </div>
+
+                <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Proyecto de Emprendurismo
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Es un proyecto en donde se planifica la creación de un nuevo negocio, o una empresa, en donde pueden participar uno o más egresados(as), desarrollando un plan de negocios que pueda concretarse en la realidad, lo cual les permitirá reflexionar acerca de la posibilidad de emprender dentro de una organización o de una nueva empresa al egresar y, al mismo tiempo, aplicar en forma integrada los conocimientos, competencias, habilidades, aptitudes y valores adquiridos durante la Carrera.
+                      </div>
+                    </div>
+              </div>
+
+                <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Proyecto Integral de Educacion DUAL
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Es un proyecto en donde se expone los problemas a resolver de la empresa, en donde el alumno(a) demuestra mediante sus habilidades y aptitudes, determinados resultados a través de un procedimiento y determina las conclusiones, sin faltar las competencias desarrolladas o aplicadas durante este proceso.
+                      </div>
+                    </div>
+              </div>
+
+              <!--<div class="accordion-item">
+                <div class="accordion-item-header">
+                  Estancia
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Es un  proyecto que tiene como propósito integrar las acciones organizadas que den cuenta de lo que se va a realizar o lo que se propone, con base en los objetivos de la intervención de una área específica de la Carrera. Como propósito el proyecto trata de alcanzar un resultado (efecto concreto que se logra en su realización)  o un producto (elemento material o de servicio que se genera para producir el efecto).  Además, todo proyecto se realiza dentro de los límites de un presupuesto y de un periodo dado, siempre estableciendo las competencias, habilidades, aptitudes y valores.
+                      </div>
+                    </div>
+              </div>-->
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Tesis
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Es un texto recepcional que se caracteriza por aportar conocimiento e información novedosa sobre un tema en particular. El objetivo es la comprobación de un planteamiento o la solución a un problema, a través de la investigación bibliográfica o de campo, metódica y exhaustiva, a la que se le añade la reflexión y valores sobre algún tópico específico de la disciplina. 
+                        Además de exponer el estado actual del estudios de un tema, utiliza sus competencias, habilidades, aptitudes y la información para comprobar la línea central de la reflexión: ideas y hallazgos nuevos en el terreno profesional de la especialidad del egresado(a).
+
+                      </div>
+                    </div>
+              </div>
+
+             <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Obtencion de un Testimonio de Desempeño Satisfactorio o Sobresaliente en el Examen General de Egreso de Licenciatura (EGEL-Ceneval)
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                       Consiste en la realización de un examen de conocimientos aplicado por el Centro Nacional de Evaluación para la Educación Superior, A. C. (CENEVAL), en donde el (la) sustentante, además de los conocimientos, será capaz de demostrar competencias, habilidades, aptitudes y valores; cuyos resultados (Testimonio de Desempeño Satisfactorio o Sobresaliente), será considerado como elemento de Titulación Integral.
+                      </div>
+                    </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-item-header">
+                  Promedio General Sobresaliente de 90 a 100 en su Plan de Estudios
+                </div>
+                    <div class="accordion-item-body">
+                      <div class="accordion-item-body-content">
+                      Esta opción pueden lograr los egresados(as) que hayan obtenido un promedio de mínimo de 90 durante toda su carrera y que han demostrado con ello tener habilidades, aptitudes, valores y las competencias necesarias para aplicarlas como herramientas en su vida profesional.
+                      </div>
+                    </div>
+              </div>
+            </div>
+      </div>
+
+  <!--Comienza la informacion para de eleccion de forma de titulacion-->
+
+    <div id="dos" class="tabcontent">
+      <h3 align="center">Requisitos para la Titulación Integral 2020</h3>
+      <br>
+
+        <div class="card">
+            
+            <div class="card-stats">
+              <div class="stat">
+                <div class="value"><b>1.- Certificado Total de Estudios o Constancia</b></div>
+                <div class="type">Acreditación del 100% de los creditos del plan de estudios.</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>2.- Constancia de Acreditación Lengua Extranjera (INGLÉS)</b></div>
+                <div class="type"></div>
+              </div>
+              <div class="stat">
+                <div class="value"><B>3.- Constancia de Servicio Social</B></div>
+                <div class="type"></div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>4.- Solicitud de Inicio de Procedimiento de Titulación Integral</b></div>
+                <div class="type"><em>-></em> Expedido por el Departamento de Titulación y Egresados </div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>5.- Registro de Proyecto</b></div>
+                <div class="type">Expedido por la Jefatura de División correspondiente</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>6.- Constancia de Liberación por Asesor</b></div>
+                <div class="type">y/o revisores del proyecto (Expedido por la Jefatura de División correspondiente)</div>
+              </div>           
+              
+            </div>
+        </div>
+
+         <div class="card">
+            
+            <div class="card-stats">
+              <div class="stat">
+                <div class="value"><b>7.- Constancia de Liberación del Proyecto</b></div>
+                <div class="type"><br>a la entrega de 4 CD’S (Expedido por la jefatura de División correspondiente o en su caso, Testimonio de Desempeño Satisfactorio o Sobresaliente en el Examen General de Egreso de Licenciatura expedida por CENEVAL o Constancia de Promedio General Sobresaliente de 90 a 100 en su plan de estudios expedida por el Departamento de Control Escolar.</div>
+              </div>
+
+               <div class="stat">
+                <div class="value"><b>8.- Recibo de Pago de Derechos</b></div>
+                <div class="type"><br>Realizar el pago al <b>TESVG.</b><br>
+                  <b>A.Entrar a la página de internet: <a href="https://sfpya.edomexico.gob.mx/recaudacion/">https://sfpya.edomex.gob.mx/recaudacion/<br></a></b>
+                  • Organismos Auxiliares<br>
+                  • Tecnológico de Estudios Superiores de Villa Guerrero <br>
+                  • Aparece el formulario de PAGO: Tecnológico de Estudios Superiores de Villa Guerrero (Insertar los Datos Personales) <br>
+                  • Servicios: Tipo: (Selecciona: Examen, recepción y constancias) <br>
+                  <b>&nbsp;&nbsp;&nbsp;Concepto: Examen profesional:</b>Cantidad:1($835.00) Agregar
+                  <b><br>&nbsp;&nbsp;&nbsp;Concepto: Recepcional Profesional:</b>Cantidad:1($250.00) Agregar
+                  <b><br>&nbsp;&nbsp;&nbsp;Concepto: Constancia de no adeudo:</b>Cantidad:1($250.00) Agregar
+                  <b><br>&nbsp;&nbsp;&nbsp;Imprimir Formato</b><br>
+                  <b>B. Entregar el formato universal y ficha de depósito original al Departamento de Titulación y Egresados</b>
+
+ 
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="card">
+            
+            <div class="card-stats">
+              
+              <div class="stat">
+                <div class="value"><b>9.- Constancia de NO Adeudo Económico para Titulación</b></div>
+                <div class="type"><br>Exedido por el Departamento de Titulación y Egresados</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>10.- Fotografías (Tamaño título 4 y fotografías semitítulo 4)</b></div>
+                <div class="type"><b><br>CARACTERÍSTICAS DE LAS FOTOGRAFÍAS:</b>Deberán ser recientes, blanco y negro, fondo blanco, papel mate, con retoque y adheribles. En caso de usar lentes o percing, <b>OMITIRLOS</b>.<br>
+                  • <b>Damas:</b> saco claro, blusa blanca, sin aretes, cadenas, frente descubierta y sin maquillaje<br>
+                  • <b>Caballeros:</b> saco claro, camisa blanca, corbata clara lisa, sin barba, ni bigote</div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+     
+
+
+<div id="tres" class="tabcontent">
+      <h3 align="center">Procedimiento para la Titulación Integral 2020</h3>
+      <br>
+
+        <div class="card">
+            
+            <div class="card-stats">
+              <div class="stat">
+                <div class="value"><b>1.- Certificado Total de Estudios o Constancia</b></div>
+                <div class="type">Acudir a Control Escolar del Tecnológico</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>2.- Constancia de Acreditación Lengua Extranjera (INGLÉS)</b></div>
+                <div class="type">Acudir al Departamento de Ingles</div>
+              </div>
+              <div class="stat">
+                <div class="value"><B>3.- Constancia de Servicio Social</B></div>
+                <div class="type">Debió de ser emitida por el DEPARTAMENTO DE SERVICIO SOCIAL 
+                  Y PRACTICAS PROFESIONALES una vez que se allá concluido con el servicio social</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>4.- Solicitud de Inicio de Procedimiento de Titulación Integral</b></div>
+                <div class="type">Este será expedido por el Departamento de Titulación y Egresados, una vez haya realizado el registro del proyecto 
+                Registro de Proyecto:
+                <b>&nbsp;&nbsp;&nbsp;4.1.- Ingresar a Repositorio</b><br>
+                <!--<img src="img/pros/1.jpg">--><br>
+                <b>&nbsp;&nbsp;&nbsp;4.2.- Deberá llenar el formulario que se solicita en la pestaña Registro de Proyecto</b><br>
+                <!--<img src="img/pros/2.jpg">--><br>
+                <b>&nbsp;&nbsp;&nbsp;4.3.-Una vez llenados los campos deberá enviar la información asegurándose sea correcta para después acudir al Departamento para la emisión del formato.</b></div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>5.- Registro de Proyecto</b></div>
+                <div class="type">Expedido por la Jefatura de División correspondiente</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>6.- Constancia de Liberación por Asesor</b></div>
+                <div class="type">y/o revisores del proyecto (Expedido por la Jefatura de División correspondiente)</div>
+              </div>
+            </div>
+        </div>
+
+         <div class="card">
+            
+            <div class="card-stats">
+              <div class="stat">
+                <div class="value"><b>7.- Constancia de Liberación del Proyecto</b></div>
+                <div class="type"><br>a la entrega de 4 CD’S (Expedido por la jefatura de División correspondiente o en su caso, Testimonio de Desempeño Satisfactorio o Sobresaliente en el Examen General de Egreso de Licenciatura expedida por CENEVAL o Constancia de Promedio General Sobresaliente de 90 a 100 en su plan de estudios expedida por el Departamento de Control Escolar.</div>
+              </div>
+
+               <div class="stat">
+                <div class="value"><b>8.- Recibo de Pago de Derechos</b></div>
+                <div class="type"><br>Realizar el pago al <b>TESVG.</b><br>
+                  <b>A.Entrar a la página de internet: <a href="https://sfpya.edomexico.gob.mx/recaudacion/">https://sfpya.edomex.gob.mx/recaudacion/<br></a></b>
+                  • Organismos Auxiliares<br>
+                  • Tecnológico de Estudios Superiores de Villa Guerrero <br>
+                  • Aparece el formulario de PAGO: Tecnológico de Estudios Superiores de Villa Guerrero (Insertar los Datos Personales) <br>
+                  • Servicios: Tipo: (Selecciona: Examen, recepción y constancias) <br>
+                  <b>&nbsp;&nbsp;&nbsp;Concepto: Examen profesional:</b>Cantidad:1($835.00) Agregar
+                  <b><br>&nbsp;&nbsp;&nbsp;Concepto: Recepcional Profesional:</b>Cantidad:1($250.00) Agregar
+                  <b><br>&nbsp;&nbsp;&nbsp;Concepto: Constancia de no adeudo:</b>Cantidad:1($250.00) Agregar
+                  <b><br>&nbsp;&nbsp;&nbsp;Imprimir Formato</b><br>
+                  <b>B. Entregar el formato universal y ficha de depósito original al Departamento de Titulación y Egresados</b>
+
+ 
+                  </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="card">
+            
+            <div class="card-stats">
+              
+              <div class="stat">
+                <div class="value"><b>9.- Constancia de NO Adeudo Económico para Titulación</b></div>
+                <div class="type"><br>Exedido por el Departamento de Titulación y Egresados</div>
+              </div>
+              <div class="stat">
+                <div class="value"><b>10.- Fotografías (Tamaño título 4 y fotografías semitítulo 4)</b></div>
+                <div class="type"><b><br>CARACTERÍSTICAS DE LAS FOTOGRAFÍAS:</b>Deberán ser recientes, blanco y negro, fondo blanco, papel mate, con retoque y adheribles. En caso de usar lentes o percing, <b>OMITIRLOS</b>.<br>
+                  • <b>Damas:</b> saco claro, blusa blanca, sin aretes, cadenas, frente descubierta y sin maquillaje<br>
+                  • <b>Caballeros:</b> saco claro, camisa blanca, corbata clara lisa, sin barba, ni bigote</div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+
+
+     
+   
+
+    </main>
+				
+        <!--Menu desplegable de la informacion sobre los tipos de titulacion-->
+           
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!--Pie de la pagina derechos de autor-->
+		<footer>
+			<div class="contenedor">
+				<p class="copy"><br>Tecnologico de Estudios Superiores de Villa Guerrero &copy; 2020</p>
+				<div class="sociales">
+					<a class="icon-fac" href="https://www.facebook.com/TECVILLAGUERRERO/"></a>
+					<a class="icon-ins" href=""></a>
+					<a class="icon-twi" href="https://twitter.com/TESVGMex"></a>
+					<a class="icon-you" href=""></a>
+				</div>
+			</div>
+				
+		</footer>
+
+</body>
+</html>

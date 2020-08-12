@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.con-manu nav{
+	transform: translateX(0.5%);
+}
+
+
+.con-manu nav button{
+	text-align: center;
+	padding: 0.5rem 1rem 0.5rem 1rem;
+	color:black;
+	border-left: 1px solid rgba(51,51,51,0.5);
+	transition: all 400ms ease;
+}
+
+.con-manu nav button:hover{
+	border-left: 5px solid rgba(1,151,51,0.5);
+	background: rgba(1,151,51,0.3);
+}
+
+.tabcontent img{
+	width: 100%;
+	height: 35vh;
+}
+
+.tabcontent{
+	position: relative;
+	width:65%;
+	height: 68vh;
+	transform: translateY(50%);
+	transform: translateX(10%);
+	box-sizing: border-box;
+}
+
+.tablink {
+    background-color: rgba(51,51,51,0.5);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Set height of body and the document to 100% */
+
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 15px;
+    /*font-size: 13px;*/
+    width: auto;
+    border-radius: 0.5rem;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 25px;
+    height: 100%;
+}
+
+.formulario{
+	position: absolute;
+	left: 5%;
+	/*transform: translate(-10%);*/
+	width: 90%;
+	height: auto;
+	box-sizing: border-box;
+	background: rgba(51,51,51,0.3);
+}
+
+ul.lis{
+	list-style: none;
+	margin:17px;
+	padding: 0 0 10px;
+}
+
+.search_bar{
+  width: 15%;
+  float: left;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  position: relative;
+  transition: all .5s ease;
+}
+
+.search_bar input{
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+  border:none;
+  border-bottom: 1px solid #858585;
+  padding: 0px 10px 0px 25px;
+  box-sizing: border-box;
+  height: 22px;
+
+  box-shadow: inset 0px 1px 3px rgba(0,0,0,.7);
+
+  background: rgb(175,52,54); /* Old browsers */
+  background: -moz-linear-gradient(45deg,  rgba(175,52,54,1) 0%, rgba(147,36,57,1) 44%, rgba(147,36,57,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg,  rgba(175,52,54,1) 0%,rgba(147,36,57,1) 44%,rgba(147,36,57,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg,  rgba(175,52,54,1) 0%,rgba(147,36,57,1) 44%,rgba(147,36,57,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#af3436', endColorstr='#6d0019',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.search_bar input:focus{
+  background: #fff;
+  box-shadow: none;
+}
+
+.icon-search{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #000;
+  text-decoration: none;
+}

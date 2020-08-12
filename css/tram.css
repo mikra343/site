@@ -1,0 +1,77 @@
+.card {
+  box-shadow: 10px 0px 5px rgba(51,151,51,1);
+  text-align: left;
+}
+
+.card-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: rgba(51,51,51,0.3);
+}
+
+.card-stats .stat {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  padding:10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card {
+...
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin:5px;
+}
+
+.card-stats .stat img {
+  width:170px;
+  height:50px;
+  /*border-radius: 80%;*/
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.con-manu nav{
+  transform: translateX(0.5%);
+}
+
+
+.con-manu nav button{
+  text-align: center;
+  padding: 1rem 2rem 1rem 2rem;
+  color:black;
+  border-left: 1px solid rgba(51,51,51,0.5);
+  transition: all 400ms ease;
+}
+
+.con-manu nav button:hover{
+  border-left: 5px solid rgba(1,151,51,0.5);
+  background: rgba(1,151,51,0.3);
+}
+
+.tabcontent img{
+  width: 100%;
+  height: 35vh;
+}
+
+.tabcontent{
+  position: relative;
+  width:65%;
+  height: 68vh;
+  transform: translateY(50%);
+  transform: translateX(10%);
+  box-sizing: border-box;
+}
+
+.tablink {
+    background-color: rgba(1,151,51,0.8);
+    cursor: pointer;
+}

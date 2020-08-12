@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+
+	<head>
+		<title>Sistema Integral de Titulación y Egresados</title>
+		<meta charset="UTF-8"/>
+		<!--Responsive-->
+		<meta name="viewport" content="width-device-width, user-scalable=no, inicial-scale=1, maximum-scale=1, minimum scale=1"/>
+		<!--Iconos-->
+		<link rel="stylesheet" type="text/css" href="css/fontello.css">
+		<!--Estilo-->
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/egem.css">
+		<link rel="stylesheet" type="text/css" href="css/forem.css">
+		
+		<link rel="stylesheet" href="php/verificacion.php">
+		
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
+		</script>
+		<script type="text/javascript" src="js/egem.js" defer></script>>
+
+	</head>
+
+<!--Pagina contenedora-->
+	<body>
+		<header>
+			<!--Contenedor de menu-->
+			<div class="contenedor">
+				
+				<input type="checkbox" id="menu-bar">
+				<label class="icon-menu" for="menu-bar"></label>
+				<nav class="menu">
+					<a href="index.html">Incio</a>
+					<a href="infr.html">Titulación</a>
+					<a href="rep.html">Repositorio</a>
+					<a href="tram.html">Trámites</a>
+					<a href="egre.html">Seguimiento de Egresados</a>
+					<a href="emp.html">Cuestionario para Empleadores</a>
+				</nav>
+			</div>
+		</header>
+		
+		<!--Modal Mensaje Emergente
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<script src="js/modemp.js"></script>-->
+		
+
+		<main>
+			
+			<!--Imagen de Cabecera-->
+			<section id="bnnr1">
+				<img src="img/bnrc.png">
+					<div class="contenedor">
+						<h2 >EMPLEADORES</h2><hr>
+					</div>
+			</section>
+			
+
+			<button class="tablink" onclick="openPage('uno',this,'#019733')"id="defaultOpen">A. Datos Generales de la Empresa u Organismo</button>
+			<button class="tablink" onclick="openPage('dos',this,'#019733')">B. Ubicación Laboral de los Egresados</button>
+			<button class="tablink" onclick="openPage('tres',this,'#019733')"><br>C. Competencias Laborales</button>
+				
+				
+				<div id="uno" class="tabcontent">
+				<h3>A. DATOS GENERALES DE LA EMPRESA U ORGANISMO</h3>
+
+					<form action="empresa.php" method="POST" enctype="multipart/form-data" > 
+						<label>1.-Su empresa u organismo es:</label><br>
+						<label for="mbue">Publica</label>
+						<input type="radio" id="" name="op1" value="Publica">
+						<label for="bue">Privada</label>
+						<input type="radio" id="" name="op1" value="Privada">
+						<label for="reg">Social</label>
+						<input type="radio" id="" name="op1" value="Social"><br>
+
+						<hr>
+
+						<label>2.Tamaño de la empresa u organismo</label><br>
+						<label for="mbue">Microempresa(de 1 a 30)</label>
+						<input type="radio" id="" name="op2" value="Microempresa(de 1 a 30)">
+						<label for="bue">Pequeña(de 31 a 100)</label>
+						<input type="radio" id="" name="op2" value="Pequeña(de 31 a 100)">
+						<label for="reg">Mediana(de 101 a 500)</label>
+						<input type="radio" id="" name="op2" value="Mediana(de 101 a 500)">
+						<label for="reg">Grande(más de 500)</label>
+						<input type="radio" id="" name="op2" value="Grande(más de 500)"><br>
+
+						<hr>
+
+						<label>3.Actividad económica de la empresa u organismo. Indique a cual clasificación corresponde su empresa:</label><br><br>
+
+						<table class="egt">
+						  <tr>
+						    <td>
+							    <label for="mbue">Agro-industria</label>
+								<input type="radio" id="" name="op3" value="Agro-industria">
+							</td>
+							<td>
+							    <label for="bue">Minerales<br>no metálicos</label>
+								<input type="radio" id="" name="op3" value="Minerales no metálicos ">
+							</td>
+						    <td>
+							    <label for="reg">Silvicultura</label>
+								<input type="radio" id="" name="op3" value="Silvicultura">
+							</td>
+						  </tr>
+						  
+						  <tr>
+						    <td>
+							    <label for="mbue">Productos<br>metálicos </label>
+								<input type="radio" id="" name="op3" value="Productos metálicos">
+							</td>
+							<td>
+							    <label for="bue">Industrias<br>metálicas<br>básicas</label>
+								<input type="radio" id="" name="op3" value="Industrias metálicas básicas">
+							</td>
+						    <td>
+							    <label for="reg">Pesca y<br>acuacultura</label>
+								<input type="radio" id="" name="op3" value="Pesca y acuacultura">
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">Maquinaria<br>y equipo </label>
+								<input type="radio" id="" name="op3" value="Maquinaria y equipo">
+							</td>
+							<td>
+							    <label for="bue">Mineria</label>
+								<input type="radio" id="" name="op3" value="Mineria">
+							</td>
+						    <td>
+							    <label for="reg">Construcción</label>
+								<input type="radio" id="" name="op3" value="Construcción">
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">Alimentos</label>
+								<input type="radio" id="" name="op3" value="Alimentos">
+							</td>
+							<td>
+							    <label for="bue">Bebidas y<br>tabaco</label>
+								<input type="radio" id="" name="op3" value="Bebidas y tabaco">
+							</td>
+						    <td>
+							    <label for="reg">Electricidad</label>
+								<input type="radio" id="" name="op3" value="Electricidad">
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">Comercio<br>y turismo</label>
+								<input type="radio" id="" name="op3" value="Comercio y turismo">
+							</td>
+							<td>
+							    <label for="bue">Madera<br> y sus productos</label>
+								<input type="radio" id="" name="op3" value="Madera y sus productos">
+							</td>
+						    <td>
+							    <label for="reg">Transporte</label>
+								<input type="radio" id="" name="op3" value="Transporte">
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">Papel </label>
+								<input type="radio" id="" name="op3" value="Papel">
+							</td>
+							<td>
+							    <label for="bue">Almacenaje<br> y comunicaciones</label>
+								<input type="radio" id="" name="op3" value="Almacenaje y comunicaciones">
+							</td>
+						    <td>
+							    <label for="reg">Imprenta y<br>editoriales</label>
+								<input type="radio" id="" name="op3" value="Imprenta y editoriales">
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">Servicios<br>financieros</label>
+								<input type="radio" id="" name="op3" value="Servicios financieros">
+							</td>
+							<td>
+							    <label for="bue">Seguros</label>
+								<input type="radio" id="" name="op3" value="Seguros">
+							</td>
+						    <td>
+							    <label for="reg">Actividades inmobiliaras<br> y de alquiler</label>
+								<input type="radio" id="" name="op3" value="Actividades inmobiliaras y de alquiler">
+							</td>
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">Química </label>
+								<input type="radio" id="" name="op3" value="Química">
+							</td>
+							<td>
+							    <label for="bue">Educación</label>
+								<input type="radio" id="" name="op3" value="Educación">
+							</td>
+						    <td>
+							    <label for="reg">Caucho y<br>plastico</label>
+								<input type="radio" id="" name="op3" value="Caucho y plastico">
+							</td>
+						  </tr>
+
+						 </table>
+
+						<label for="mbue">Otra:</label>
+						<input type="text"  name="otra" placeholder="Especifique"><br>
+
+						<hr><br>
+
+						<label>4.Nombre comercial de la Empresa:</label>
+						<input type="text" name="nom" placeholder=""><br>
+
+						<label>Domicilio:</label><br>
+						<input type="text" name="calle" placeholder="Calle y No.">
+						<input type="text" name="colonia" placeholder="Colonia">
+						<input type="text" name="cp" placeholder="Codigo Postal"><br>
+						<input type="text" name="ciudad" placeholder="Ciudad">
+						<input type="text" name="municipio" placeholder="Municipio">
+						<input type="text" name="esdo" placeholder="Estado"><br>
+
+
+						<label>Teléfono:</label>
+						<input type="text" name="tele" placeholder="(000) 000 000 00 00">
+						<br>
+						<label>E-mail:</label>
+						<input type="text" name="mail" placeholder="username@dominio.com"><br>
+						
+						<br><input type="submit"  name="submit" value="Enviar" id="boton">
+					</form>
+				
+				</div>
+
+				<div id="dos" class="tabcontent">
+				<h3>B. UBICACIÓN LABORAL DE LOS EGRESADOS</h3>
+					<form action="ubilaboral.php" method="POST"  > 
+						<label>1.-Número de profesionistas con nivel de licenciatura que laboran en la empresa u organismo:</label><br>
+						<label for="mbue">1</label>
+						<input type="radio" id="" name="op1" value="1">
+						<label for="bue">&nbsp;&nbsp;De 2 a 5</label>
+						<input type="radio" id="" name="op1" value="De 2 a 5">
+						<label for="reg">&nbsp;&nbsp;De 6 a 8</label>
+						<input type="radio" id="" name="op1" value="De 6 a 8"><br>
+						<label for="bue">De 9 a 10</label>
+						<input type="radio" id="" name="op1" value="De 9 a 10">
+						<label for="reg">&nbsp;&nbsp;Más de 10</label>
+						<input type="radio" id="" name="op1" value="Más de 10"><br>
+
+						<hr>
+
+						<label>2.Número de egresados del Tecnológico y nivel jerárquico que ocupan en su organización:</label><br>
+							<label for="mbue">Carrera:</label>
+							<input type="text"  name="carrera" placeholder="Especifique"><br>
+							<label for="mbue">Mando superior:</label>
+							<input type="text"  name="mando1" placeholder="Especifique"><br>
+							<label for="mbue">Mando intermedio:</label>
+							<input type="text"  name="mando2" placeholder="Especifique"><br>
+							<label for="mbue">Supervisor o equivalente:</label>
+							<input type="text"  name="supervisor" placeholder="Especifique"><br>
+							<label for="mbue">Técnico o auxiliar:</label>
+							<input type="text"  name="tecnico" placeholder="Especifique"><br>
+							<label for="mbue">Otros:</label>
+							<input type="text"  name="otro" placeholder="Especifique"><br>
+						<br>
+
+						<hr>
+
+						<label>3. Congruencia entre perfil profesional y función que desarrollan los egresados del Tecnológico en su empresa u organización. Del total de egresados anote el porcentaje que corresponda:</label><br><br>
+							<label for="mbue">A) Completamente</label>
+							<input type="radio" id="" name="op2" value="Completamente">
+						
+						    <label for="bue">B) Medianamente</label>
+							<input type="radio" id="" name="op2" value="Medianamente">
+						
+						    <label for="reg">C) Ligeramente</label>
+							<input type="radio" id="" name="op2" value="Ligeramente">
+						
+						    <label for="mbue">D) Ninguna relación</label>
+							<input type="radio" id="" name="op2" value="Ninguna relación"><br>	
+
+						<hr><br>
+
+						<label>4.Requisitos que establece su empresa u organización para la contratación de personal con nivel de licenciatura:</label>
+						<table class="egt">
+						  <tr>
+						    <td>
+							    <label for="mbue">a)Área o campo de estudio</label>
+								<input type="radio" id="" name="op3" value="Área o campo de estudio">
+							</td>
+							<td>
+							    <label for="bue">b)Titulación</label>
+								<input type="radio" id="" name="op3" value="Titulación">
+							</td>
+						    
+						  </tr>
+						  
+						  <tr>
+						    <td>
+							    <label for="mbue">c)Experiencia laboral/práctica(antes de egresar)</label>
+								<input type="radio" id="" name="op3" value="Experiencia laboral/práctica(antes de egresar)">
+							</td>
+							<td>
+							    <label for="bue">d)Posicionamiento de la Institución de Egreso</label>
+								<input type="radio" id="" name="op3" value="Posicionamiento de la Institución de Egreso">
+							</td>
+						    
+						  </tr>
+
+						  <tr>
+						    <td>
+							    <label for="mbue">e)Conocimineto de idiomas extranjeros</label>
+								<input type="radio" id="" name="op3" value="Conocimineto de idiomas extranjeros">
+							</td>
+							<td>
+							    <label for="bue">f)Recomendaciones/Referencias</label>
+								<input type="radio" id="" name="op3" value="Recomendaciones/Referencias">
+							</td>
+						  </tr>
+
+						  <tr>
+						  	<td>
+							    <label for="reg">g)Personalidad/actitudes</label>
+								<input type="radio" id="" name="op3" value="Personalidad/actitudes">
+							</td>
+							<td>
+							    <label for="reg">h)Capacidad de liderazgo</label>
+								<input type="radio" id="" name="op3" value="Capacidad de liderazgo">
+							</td>
+						  </tr>					 	
+
+						 </table>
+
+						<label for="mbue">Otros:</label>
+						<input type="text"  name="otros" placeholder="Especifique"><br>
+
+						<hr>
+
+						<label for="mbue"><br>5.Carreras que demanda preferentemente su empresa u organismo:</label>
+						<textarea name="mensaje" placeholder="Esquiba aqui..."></textarea>
+				
+						<br><input type="submit" name="submit" value="Enviar" id="boton">
+					</form>
+
+				</div>
+
+				<div id="tres" class="tabcontent">
+				<h3>C. COMPETENCIAS LABORALES</h3>
+				
+				<form action="competencias.php" method="POST" > 
+
+						<label>1.-En su opinión ¿qué competencias considera deben desarrollar los egresads del Instituto Tecnológico, para desempeñarse eficientemente en sus actividades laborales?:</label><br>
+						<p class="infor">Por favor evalúe conforme a la tabla siguienete: Califique del 1 (menor) al 5 (mayor):</p>
+						<p>Competencia Laboral 1 2 3 4 5</p><br>
+						
+						
+						<table class="egt">
+						  <tr>
+						    <td><label for="mbue">a. Habilidad para resolver conflictos</label></td>
+							<td><input type="text" size="3" name="a"></td>
+						  </tr>
+						  
+						  <tr>
+						    <td><label for="mbue">b. Ortografía y redacción de documentos</label></td>
+							<td><input type="text" size="3" name="b"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">c. Mejora de procesos</label></td>
+							<td><input type="text" size="3" name="c"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">d.Trabajo en equipo</label></td>
+							<td><input type="text" size="3" name="d"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">e. Habilidad para adiministrar tiempo</label></td>
+							<td><input type="text" size="3" name="e"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">f. Seguridad personal</label></td>
+							<td><input type="text" size="3" name="f"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">g. Facilidad de palabra</label></td>
+							<td><input type="text" size="3" name="g"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">h. Gestión de proyectos</label></td>
+							<td><input type="text" size="3" name="h"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">i. Puntualidad y asistencia</label></td>
+							<td><input type="text" size="3" name="i"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">j. Cumplimiento de las normas</label></td>
+							<td><input type="text" size="3" name="j"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">k. Integración al trabajo</label></td>
+							<td><input type="text" size="3" name="k"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">l. Creatividad e innovación</label></td>
+							<td><input type="text" size="3" name="l"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">m. Capacidad de megociación</label></td>
+							<td><input type="text" size="3" name="m"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">n. Capacidad de abstacción, análisis y síntesis</label></td>
+							<td><input type="text" size="3" name="n"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">o. Liderazgo y toma de desiciones</label></td>
+							<td><input type="text" size="3" name="o"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">p. Adaptación al cambio</label></td>
+							<td><input type="text" size="3" name="p"></td>
+						  </tr>
+						  <tr>
+						    <td><label for="mbue">q. Otras</label></td>
+							<td><input type="text" name="q" placeholder="Especifique"></td>
+						  </tr>
+						 </table>
+						
+						<hr>
+
+						<label>2.Con base al desempeño laboral asi como a las actividades laborales que realiza el egresadi ¿Cómo considera su desempeño laboral respecto a su fomración acádemica? Del total de egresados anote el porcentaje que correponda:</label><br>
+							<label for="mbue">a.Excelente:</label>
+							<input type="text" size="5" name="exc" placeholder="%">
+							<label for="mbue">b.Muy bueno:</label>
+							<input type="text" size="5" name="mb" placeholder="%">
+							<label for="mbue">c.Bueno:</label>
+							<input type="text" size="5" name="bue" placeholder="%">
+							<label for="mbue">d.Regular:</label>
+							<input type="text" size="5" name="reg" placeholder="%">
+							<label for="mbue">e.Malo:</label>
+							<input type="text" size="5" name="mal" placeholder="%"><br>
+
+							<hr>
+						<label>3.De acuerdo con las necesidades de su empresa u organismo, ¿que sugiere para mejorar la formación de los egresados del Tecnológico?</label><br>	
+						<textarea name="mensaje" placeholder="Esquiba aqui..."></textarea>
+
+						<hr>
+
+						<label>4. Comentarios y sugerencias</label><br>	
+						<textarea name="mensaje2" placeholder="Esquiba aqui..."></textarea>
+							
+
+						<br><input type="submit" name="submit" value="Enviar" id="boton">
+					</form>
+				</div>
+				
+		
+
+
+
+		</main>
+
+
+		<br><br><br><br><br><br><br><br>
+
+
+		<!--Pie de la pagina derechos de autor-->
+		<footer>
+			<div class="contenedor">
+				<p class="copy"><br>Tecnologico de Estudios Superiores de Villa Guerrero &copy; 2020</p>
+				<div class="sociales">
+					<a class="icon-fac" href="https://www.facebook.com/TECVILLAGUERRERO/"></a>
+					<a class="icon-ins" href=""></a>
+					<a class="icon-twi" href="https://twitter.com/TESVGMex"></a>
+					<a class="icon-you" href=""></a>
+				</div>
+			</div>
+				
+		</footer>
+
+	</body>
+
+</html>

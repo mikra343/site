@@ -1,0 +1,95 @@
+/*enclaces de los estilos de la pagina*/
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');*/
+@import url('menu.css');
+@import url('banner.css');
+@import url('image.css');
+
+/*parte inciial del acomodo de la pagina*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	/*font-family: 'robotomedium';*/
+}
+
+/*Nombre de SIITE en la barra de menu*/
+header{
+	
+	width: 100%;
+	height: 50px;
+	background: rgba(1,151,51,1);
+	color:#fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+/*diseño de la barra de menu*/
+.contenedor{
+	width: 99.5%;
+	margin: auto;
+}
+
+h1{
+	float: left;
+}
+
+header .contenedor{
+	display: table;
+}
+
+/*parte de la imagen y titulo */
+section{
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+#bnns h2{
+  	text-align: center;
+}
+
+#bnns .text{
+  text-indent: 5em;
+  font-size: 14pt;
+  /*font-family: "calibri";*/
+}
+
+/*#bnns p{
+  
+  font-size: 12pt;
+  font-family: "calibri";
+}*/
+
+#banner img{
+margin-top: 1px;
+}
+
+
+/*derechos de autos del TESVG*/
+footer .contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-bottom:25px; 
+	background-color: rgba(51,51,51,0.6);
+	color:#fff;
+}
+
+.copy{
+	font-size: 14px;
+}
+
+.sociales{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+}
+
+.sociales a{
+	color: #fff;
+	text-decoration: none;
+}
